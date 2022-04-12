@@ -85,8 +85,10 @@ ingress:
     # cert-manager.io/cluster-issuer: "letsencrypt-prod"
     # nginx.ingress.kubernetes.io/ssl-redirect: "true"
     # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+
+    # Enter your host name
   hosts:
-    - host: "aea3e438dd2dd4ac494c2c6d1def229a-1c078def0806e30a.elb.us-east-1.amazonaws.com"
+    - host: ""
       paths:
       - path: "/"
   ## @param ingress.tls Enable TLS configuration for the host defined at `ingress.hosts` parameter
